@@ -3,11 +3,12 @@ import { useSelector, useDispatch } from 'react-redux';
 import { remove } from 'components/redux/store';
 
 export const Contacts = () => {
+  
   const dispatch = useDispatch();
   const contacts = useSelector(state => state.contacts);
   const filter = useSelector(state => state.filter);
   const visibleContacts = contacts.filter(contact => contact.name.toLowerCase().includes(filter.toLowerCase()));
-
+  
   return (
     <div className={css.contactListBlock}>
       <ul>
