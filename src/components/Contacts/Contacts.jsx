@@ -1,6 +1,6 @@
 import css from "../Contacts/Contacts.module.css";
 import { useSelector, useDispatch } from 'react-redux';
-import { remove } from 'components/redux/store';
+import { remove } from 'redux/store';
 
 export const Contacts = () => {
   
